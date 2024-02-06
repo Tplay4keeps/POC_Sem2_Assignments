@@ -1,60 +1,22 @@
-print(len('hi there!'))
+#Continue with code from 3.3
 
-print(len(''))
+number1 = 0
+number2 = 0
+try:
+    number1 = int(input("Enter a number"))
+    # YOUDO.  use input function and int to set number2
+except ValueError:
+    print("An input was not correct")
+else:
+    print("No value error detected")
+finally:
+    print("Values taken care of")
 
-print(len(' '))
-
-print('hi there!'[1])
-
-print('hi there!'[1:])
-
-print('hi there!'[:5])
-
-print('hi there!'[3:6])
-
-print('I\'m Adrian')
-print("\"I'm Adrian\"")
-print('"I\'m Adrian"')
-
-# \t is the horizontal tab
-# \n is the new line 
-# \r is the return the cursor to the left 
-# \\ is the single backslash
-  
-print(ord('a'))
-
-print(ord('A'))
-print(ord('🥶'))
-
-print(chr(97))
-
-print(chr(256))
-
-print(chr(128512))
-
-test_string = '''Line 1
-Line 2
-Line 3'''
-
-print(len(test_string))
-print(test_string)
-
-print('aaa' + 'bbb')
-
-print(2 * 'ccc')
-
-for char in 'hello from the world of Python':
-    print(char, end='-')
-
-print()
-# text = 'dHello there!'
-# del text[0]
-
-print(min('ilovetravellingaroundtheworld'))
-
-print(min('i love travellingaroundtheworld'))
-
-print(max('ilovetravellingaroundtheworld'))
-
-for i in range(100000, 150000):
-    print(chr(i), end=" ")
+try:
+    # YOUDO divide number1 / number2 and set to answer
+    # YOUDO  print the result of the division (aka answer with some helper text)
+    pass  # YOUDO remove pass when done
+except ZeroDivisionError:
+    # YOUDO:  print message stating that division by zero is not possible.
+    pass  # YOUDO remove pass when done
+#YOUDO:  else and finally here as well.  
