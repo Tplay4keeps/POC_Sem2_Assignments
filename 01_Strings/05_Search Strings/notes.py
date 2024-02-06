@@ -1,22 +1,63 @@
-#Continue with code from 3.3
+def min(a : int, b: int) -> int:
+    if(a < b):
+        return a
+    else:
+        return b
+def print_min(a: int, b: int) -> None:
+    if (a < b):
+        print(a)
+    else:
+        print(b)   
 
-number1 = 0
-number2 = 0
-try:
-    number1 = int(input("Enter a number"))
-    # YOUDO.  use input function and int to set number2
-except ValueError:
-    print("An input was not correct")
-else:
-    print("No value error detected")
-finally:
-    print("Values taken care of")
+num1: int = int(input("Enter a number: "))
+num2 : int = int(input("Enter another number: "))
+# print(min(num1, num2))
 
-try:
-    # YOUDO divide number1 / number2 and set to answer
-    # YOUDO  print the result of the division (aka answer with some helper text)
-    pass  # YOUDO remove pass when done
-except ZeroDivisionError:
-    # YOUDO:  print message stating that division by zero is not possible.
-    pass  # YOUDO remove pass when done
-#YOUDO:  else and finally here as well.  
+result = print_min(num1, num2)
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def min(a: int, b : int) -> int:
+    if (a < b):
+        return a
+    else:
+        return b
+
+
+
+
+
+number1: int = int(input("Enter a number"))
+number2: int = int(input("Enter another number"))
+print(min(number1, number2))
+
